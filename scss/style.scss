@@ -11,3 +11,14 @@ nav {
 h2 {
     color: $color;
 }
+
+@mixin extra-space($value) {
+    padding-left: $value;
+    padding-right: $value;
+    padding-top: $value * 2;
+    padding-bottom: $value + 15px;
+}
+
+.extra-box {
+    @include extra-space(10px);
+}
